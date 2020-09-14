@@ -10,7 +10,7 @@ export default function Navbar (){
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a href="/" className="navbar-brand">tradecoder</a>
+                    <a href="/plan-master/" className="navbar-brand">tradecoder</a>
                 </div>
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
                     <span className="navbar-toggler-icon"></span>
