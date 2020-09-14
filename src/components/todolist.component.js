@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
-export default function ShortPlanList(){
+export default function Todos(){
 const [todolist, setTodolist] =  useState([]);
 const [open, setOpen]= useState(true);
 useEffect(()=>{
