@@ -14,9 +14,9 @@ function App() {
       <div className="p-4">
         <h6 className="text-center">Plan master- a roadmap for ultimate goals</h6>     
       </div>
-      <Route path='/' exact component={AddPlans}></Route>
-      <Route path="/shortplan" component={ShortPlanList}></Route>
-      <Route path="/longplan" component={LongPlanList}></Route>
+      <Route path='/plan-master/' exact component={AddPlans}></Route>
+      <Route path="/plan-master/shortplan" component={ShortPlanList}></Route>
+      <Route path="/plan-master/longplan" component={LongPlanList}></Route>
     </Router>
   );
 }
