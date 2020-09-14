@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/plan-master/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/plan-master/static/js/main.bacfc5e6.chunk.js",
+    "main.js.map": "/plan-master/static/js/main.bacfc5e6.chunk.js.map",
+    "runtime-main.js": "/plan-master/static/js/runtime-main.c14fd464.js",
+    "runtime-main.js.map": "/plan-master/static/js/runtime-main.c14fd464.js.map",
+    "static/js/2.e5867194.chunk.js": "/plan-master/static/js/2.e5867194.chunk.js",
+    "static/js/2.e5867194.chunk.js.map": "/plan-master/static/js/2.e5867194.chunk.js.map",
+    "index.html": "/plan-master/index.html",
+    "precache-manifest.75c8414ac1fc7a4bc38ee175eab57394.js": "/plan-master/precache-manifest.75c8414ac1fc7a4bc38ee175eab57394.js",
+    "service-worker.js": "/plan-master/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/plan-master/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.e5867194.chunk.js.LICENSE.txt": "/plan-master/static/js/2.e5867194.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c14fd464.js",
+    "static/js/2.e5867194.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.bacfc5e6.chunk.js"
+  ]
+}
