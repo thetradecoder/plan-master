@@ -35,7 +35,8 @@ function onChangeOpen(e){
                         
                         <div className="shadow p-3">                                        
                             <h4 className="text-primary">{e.title}</h4>
-                            <p>{e.details} </p>
+                            <p>{e.details}</p>
+                            <p>Progress: {e.progress}</p>
                             <p>Open date: {e.plandate?e.plandate.substring(0,10):e.plandate}, 
                             Start Date: {e.startdate?e.startdate.substring(0,10):e.startdate}, Deadline: {e.deadline?e.deadline.substring(0,10):e.deadline} </p>            
                         </div>

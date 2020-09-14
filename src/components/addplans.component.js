@@ -55,7 +55,7 @@ export default function AddPlans(){
         axios.post(`http://localhost:5000/${type}/add`, plans)
         .then(res=>{
             
-            window.location=(`/${type}`)})
+            window.location=(`/plan-master/${type}`)})
         .catch(err=>console.log(err));
     }
  
