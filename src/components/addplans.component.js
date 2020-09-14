@@ -73,6 +73,7 @@ export default function AddPlans(){
                             <select selected={type} onChange={onChangeType} className="form-control" required>
                                 <option>shortplan</option>
                                 <option>longplan</option>
+                                <option>todos</option>
                             </select>                           
                         </div>
                         <div className="form-group">

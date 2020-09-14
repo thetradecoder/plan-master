@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const shortPlanRoutes = require('./routes/short-plan.route.js');
 const longPlanRoutes = require('./routes/long-plan.route.js');
+const todoRoutes = require('./routes/todos.route.js');
 
 
 
@@ -21,6 +22,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/shortplan', shortPlanRoutes);
 app.use('/longplan', longPlanRoutes);
+app.use('/todos', todoRoutes);
 
 app.listen(port, ()=>{
     console.log(`- Server is listening on port ${port}`);

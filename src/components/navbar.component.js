@@ -20,6 +20,7 @@ export default function Navbar (){
                         <li className="nav-item"><Link to = "/plan-master/" className="nav-link">Set Plans</Link></li>
                         <li className="nav-item"><Link to = "/plan-master/shortplan/" className="nav-link">Short Term Plan</Link></li>
                         <li className="nav-item"><Link to ="/plan-master/longplan/" className="nav-link">Long Term Plan</Link></li>
+                        <li className="nav-item"><Link to ="/plan-master/todos/" className="nav-link">Todos</Link></li>
                     </ul>
                 </div>
             </div>
