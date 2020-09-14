@@ -33,9 +33,9 @@ function onChangeOpen(e){
                     return (
                         
                         <div className="shadow p-3">                                        
-                            <h4>Plan Title: {e.title}</h4>
-                            <p>Details:{e.details} <br/> 
-                            Plan Duration: {e.duration} months, Open date: {e.plandate?e.plandate.substring(0,10):e.plandate}, 
+                            <h4 className="text-primary">{e.title}</h4>
+                            <p>{e.details} </p>
+                            <p>Open date: {e.plandate?e.plandate.substring(0,10):e.plandate}, 
                             Start Date: {e.startdate?e.startdate.substring(0,10):e.startdate}, Deadline: {e.deadline?e.deadline.substring(0,10):e.deadline} </p>            
                         </div>
                     );
