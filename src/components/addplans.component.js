@@ -55,7 +55,7 @@ export default function AddPlans(){
         axios.post(`http://localhost:5000/${type}/add`, plans)
         .then(res=>{
             
-            window.location=(`/${type}`)})
+            window.location=(`/plan-master/${type}`)})
         .catch(err=>console.log(err));
     }
  
@@ -73,6 +73,7 @@ export default function AddPlans(){
                             <select selected={type} onChange={onChangeType} className="form-control" required>
                                 <option>shortplan</option>
                                 <option>longplan</option>
+                                <option>todos</option>
                             </select>                           
                         </div>
                         <div className="form-group">

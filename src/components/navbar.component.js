@@ -10,7 +10,7 @@ export default function Navbar (){
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a href="/" className="navbar-brand">tradecoder</a>
+                    <a href="/plan-master/" className="navbar-brand">tradecoder</a>
                 </div>
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
                     <span className="navbar-toggler-icon"></span>
@@ -20,6 +20,7 @@ export default function Navbar (){
                         <li className="nav-item"><Link to = "/plan-master/" className="nav-link">Set Plans</Link></li>
                         <li className="nav-item"><Link to = "/plan-master/shortplan/" className="nav-link">Short Term Plan</Link></li>
                         <li className="nav-item"><Link to ="/plan-master/longplan/" className="nav-link">Long Term Plan</Link></li>
+                        <li className="nav-item"><Link to ="/plan-master/todos/" className="nav-link">Todos</Link></li>
                     </ul>
                 </div>
             </div>

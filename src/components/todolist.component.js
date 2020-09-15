@@ -6,14 +6,14 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export default function LongPlanList(){
-const [longplans, setLongplans] =  useState([]);
+export default function Todos(){
+const [todolist, setTodolist] =  useState([]);
 const [open, setOpen]= useState(true);
 useEffect(()=>{
 
-    axios.get('http://localhost:5000/longplan')
+    axios.get('http://localhost:5000/todos')
     .then(res=>{
-        setLongplans(res.data.reverse());
+        setTodolist(res.data.reverse());
     })
     .catch(err=>console.log(err))
 });
@@ -32,17 +32,17 @@ function onSubmitEditPlan(e){
             <div className="container">
                 <div>
                     <select selected={open} onChange={onChangeOpen} className="form-control">
-                        <option>Open plans</option>
-                        <option>Closed plans</option>
+                        <option>Open tasks</option>
+                        <option>Closed tasks</option>
                     </select>
                 </div>
 
-                {longplans.filter(e=>e.open=open).map(e=>{
+                {todolist.filter(e=>e.open=open).map(e=>{
                     return (
                         
                         <div className="shadow p-3">                                        
                             <h4 className="text-primary">{e.title}</h4>
-                            <p>{e.details} </p>
+                            <p>{e.details}</p>
                             <p>Progress: {e.progress}</p>
                             <p>Open date: {e.plandate?e.plandate.substring(0,10):e.plandate}, 
                             Start Date: {e.startdate?e.startdate.substring(0,10):e.startdate}, Deadline: {e.deadline?e.deadline.substring(0,10):e.deadline} </p>

@@ -5,6 +5,8 @@ import Navbar from './components/navbar.component.js';
 import ShortPlanList from './components/shortplanlist.component.js';
 import LongPlanList from './components/longplanlist.component.js';
 import AddPlans from './components/addplans.component.js';
+import Todos from './components/todolist.component.js';
+import EditPlans from './components/editplans.component.js';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Route path='/plan-master/' exact component={AddPlans}></Route>
       <Route path="/plan-master/shortplan/" component={ShortPlanList}></Route>
       <Route path="/plan-master/longplan/" component={LongPlanList}></Route>
+      <Route path="/plan-master/todos/" component={Todos}></Route>
+      <Route path="/plan-master/editplan/" component={EditPlans}></Route>
     </Router>
   );
 }
