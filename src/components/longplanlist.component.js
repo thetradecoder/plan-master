@@ -37,7 +37,8 @@ function onChangeOpen(e){
                             <p>{e.details} </p>
                             <p>Progress: {e.progress}</p>
                             <p>Open date: {e.plandate?e.plandate.substring(0,10):e.plandate}, 
-                            Start Date: {e.startdate?e.startdate.substring(0,10):e.startdate}, Deadline: {e.deadline?e.deadline.substring(0,10):e.deadline} </p>            
+                            Start Date: {e.startdate?e.startdate.substring(0,10):e.startdate}, Deadline: {e.deadline?e.deadline.substring(0,10):e.deadline} </p>
+                            <button className="btn btn-primary">Edit</button>
                         </div>
                     );
                 })}
