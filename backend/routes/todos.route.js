@@ -17,7 +17,7 @@ router.route('/add').post((req, res)=>{
 });
 
 router.route('/update/:id').put((req, res)=>{
-    Todos.findOneAndUpdate({_id:req.params.id}, req.body)
+    Todos.updateOne({_id:req.params.id}, req.body)
     .then(data=>res.send('updated'))
     .catch(err=>res.send(err))
 });
