@@ -81,14 +81,14 @@ const Plan = props=>{
 }
 
 export default function Plans(){
-const [longplanlist, setLongplanlist] =  useState([]);
+const [planlist, setPlanlist] =  useState([]);
 const [filterbyopen, setFilterbyopen] = useState(true);
 
 useEffect(()=>{
 
     axios.get('http://localhost:5000/longplan')
     .then(res=>{
-        setLongplanlist(res.data.reverse());
+        setPlanlist(res.data.reverse());
     })
     .catch(err=>console.log(err))
 });
@@ -105,7 +105,7 @@ return (
         </select>
     </div>
     <div>
-    {longplanlist.filter(d=>d.open==filterbyopen).map(data=>{
+    {planlist.filter(d=>d.open==filterbyopen).map(data=>{
     return <Plan plans={data} />
 })} </div>
 </div>
