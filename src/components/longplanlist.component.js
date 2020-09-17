@@ -32,7 +32,7 @@ const Plan = props=>{
         }
         e.preventDefault();
         axios.put(`http://localhost:5000/longplan/update/${props.plans._id}`, updateData)
-        .then(res=>console.log(res))
+        .then(res=>{window.alert(res.data); window.location=('/plan-master/longplan')})
         .catch(err=>console.log(err));
     };
     return (
